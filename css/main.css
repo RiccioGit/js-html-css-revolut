@@ -35,7 +35,7 @@ header a:hover {
 
   /* ** Header Grigio ** */
 
-#header-gray {
+#header-grey {
   display: flex;
   justify-content: space-between;
   background-color: lightgrey;
@@ -44,7 +44,7 @@ header a:hover {
   padding-right: 5%;
 }
 
-#header-gray ul li {
+#header-grey ul li {
   padding: 10px;
   display: inline-block;
 }
@@ -58,17 +58,18 @@ header a:hover {
   height: 50px;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 35px;
 }
 
-/* !! DA RIVEDERE COME ALLINEARE I LINK !! */
-
-.flex-links li {
+.flex-links > ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/* !!!!!!!!!!!!!!!!  */
+.flex-links > ul li {
+  padding: 0 20px;
+}
 
 .logo {
   display: flex;
@@ -76,4 +77,29 @@ header a:hover {
   padding: 10px;
 }
 
+.button {
+  display: inline-block;
+  padding: 14px 18px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
   /*  ** Dropdown ** */
+
+  .dropdown {
+    position: relative;
+  }
+
+  .drop-list {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+  }
