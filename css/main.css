@@ -99,7 +99,13 @@ header a:hover {
 
   .drop-list {
     display: none;
-    position: absolute;
-    z-index: 999;
+    position:absolute;
+    padding:10px;
+    border-radius: 10px;
     background-color: white;
+  }
+
+  .dropdown li{
+    list-style: none;
+    line-height: 30px;
   }
